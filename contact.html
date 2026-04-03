@@ -60,7 +60,9 @@
 	<div class="contact-form">
 		<h2 class="section-title section-title--left">聯絡我們</h2>
 		<p class="form-intro">歡迎來信洽詢，我們將盡速回覆。</p>
-		<form action="MAILTO:a16389787@yahoo.com.tw" method="post" enctype="text/plain">
+		<div id="form-success" class="form-msg form-msg--success" style="display:none;">訊息已送出，我們將盡快回覆您！</div>
+		<div id="form-error" class="form-msg form-msg--error" style="display:none;">送出失敗，請直接來電 03-3656766 洽詢。</div>
+		<form action="/api/contact" method="POST">
 			<label for="subject">主題</label>
 			<input id="subject" name="subject" type="text" required placeholder="請輸入主題">
 			<label for="name">姓名</label>
@@ -85,8 +87,8 @@
 			<div class="icon">&#128222;</div>
 			<div>
 				<p>聯絡電話</p>
-				<p>0939-433693 陸先生</p>
-				<p>03-3656766</p>
+				<p><a href="tel:0939433693" style="color:#2563EB;">0939-433693</a> 陸先生</p>
+				<p><a href="tel:0336567666" style="color:#2563EB;">03-3656766</a></p>
 			</div>
 		</div>
 		<div class="info-item">
@@ -118,6 +120,15 @@
 </footer>
 
 <script>
+// Show form success/error message
+const params = new URLSearchParams(window.location.search);
+if (params.get('success') === '1') {
+	document.getElementById('form-success').style.display = 'block';
+}
+if (params.get('error') === '1') {
+	document.getElementById('form-error').style.display = 'block';
+}
+
 document.querySelectorAll('.nav-links > li').forEach(li => {
 	const sub = li.querySelector('ul');
 	if (sub) {
