@@ -1,137 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/index.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/growth-chamber.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/medicine-cabinet.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/icecream.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/water-tank.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/box.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/contact.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w220l.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w220.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w210l.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w210.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w110.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w120.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-nh80.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-nh150.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-nh500.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-n80.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-n150.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-n500.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p270l.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p500l.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p960l.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p270.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p500.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p960.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/medicine-cabinet/gd-500.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/medicine-cabinet/gd-960.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://xn--22qx2bp2fd1df8j.tw/product/medicine-cabinet/gd-1455.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/</loc><priority>1.0</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product.html</loc><priority>0.9</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/contact.html</loc><priority>0.8</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath.html</loc><priority>0.8</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/growth-chamber.html</loc><priority>0.8</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber.html</loc><priority>0.8</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/medicine-cabinet.html</loc><priority>0.8</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/icecream.html</loc><priority>0.7</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/water-tank.html</loc><priority>0.7</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/box.html</loc><priority>0.7</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w220l.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w220.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w210l.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w210.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w110.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/Thermostatic-water-bath/gd-w120.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-nh80.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-nh150.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-nh500.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-n80.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-n150.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/growth-chamber/gd-n500.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p270l.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p500l.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p960l.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p270.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p500.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/plant-growth-chamber/gd-p960.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/medicine-cabinet/gd-500.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/medicine-cabinet/gd-960.html</loc><priority>0.6</priority></url>
+<url><loc>https://www.xn--22qx2bp2fd1df8j.tw/product/medicine-cabinet/gd-1455.html</loc><priority>0.6</priority></url>
 </urlset>
