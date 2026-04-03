@@ -142,11 +142,13 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 		if (data.success) {
 			successMsg.style.display = 'block';
 			this.reset();
-			turnstile.reset();
+			if (typeof turnstile !== 'undefined') turnstile.reset();
 		} else {
+			errorMsg.textContent = '送出失敗(' + (data.message || 'unknown') + ')，請直接來電 03-3656766 洽詢。';
 			errorMsg.style.display = 'block';
 		}
 	} catch (err) {
+		errorMsg.textContent = '送出失敗(' + (err.message || 'network error') + ')，請直接來電 03-3656766 洽詢。';
 		errorMsg.style.display = 'block';
 	}
 	btn.textContent = '送出訊息';
