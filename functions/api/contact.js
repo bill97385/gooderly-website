@@ -1,3 +1,6 @@
+import { EmailMessage } from "cloudflare:email";
+import { createMimeMessage } from "mimetext";
+
 const TURNSTILE_SECRET = "0x4AAAAAAC0DuGS0Ys9DGTaSdFxyOIjnysw";
 
 export async function onRequestPost(context) {
@@ -25,33 +28,25 @@ export async function onRequestPost(context) {
     const email = formData.get("email") || "(未填寫)";
     const message = formData.get("message") || "(無內容)";
 
-    const emailBody = `
-來自好得力企業社網站的詢問
-
-主題：${subject}
-姓名：${name}
-E-mail：${email}
-
-內容：
-${message}
-    `.trim();
-
-    // Send email via MailChannels
-    const sendResult = await fetch("https://api.mailchannels.net/tx/v1/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        personalizations: [
-          { to: [{ email: "a16389787@yahoo.com.tw", name: "好得力企業社" }] },
-        ],
-        from: { email: "noreply@xn--22qx2bp2fd1df8j.tw", name: "好得力企業社網站" },
-        reply_to: { email: email, name: name },
-        subject: `[網站詢問] ${subject}`,
-        content: [{ type: "text/plain", value: emailBody }],
-      }),
+    // Build email
+    const msg = createMimeMessage();
+    msg.setSender({ name: "好得力企業社網站", addr: "noreply@xn--22qx2bp2fd1df8j.tw" });
+    msg.setRecipient("a16389787@yahoo.com.tw");
+    msg.setSubject(`[網站詢問] ${subject}`);
+    msg.setHeader("Reply-To", { addr: email, name: name });
+    msg.addMessage({
+      contentType: "text/plain",
+      data: `來自好得力企業社網站的詢問\n\n主題：${subject}\n姓名：${name}\nE-mail：${email}\n\n內容：\n${message}`,
     });
 
-    return redirect(sendResult.ok ? "/contact.html?success=1" : "/contact.html?error=1");
+    const emailMsg = new EmailMessage(
+      "noreply@xn--22qx2bp2fd1df8j.tw",
+      "a16389787@yahoo.com.tw",
+      msg.asRaw()
+    );
+
+    await context.env.CONTACT_EMAIL.send(emailMsg);
+    return redirect("/contact.html?success=1");
   } catch (e) {
     return redirect("/contact.html?error=1");
   }

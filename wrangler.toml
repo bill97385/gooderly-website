@@ -1,0 +1,6 @@
+name = "gooderly-website"
+compatibility_date = "2024-09-23"
+
+[[send_email]]
+name = "CONTACT_EMAIL"
+destination_address = "a16389787@yahoo.com.tw"
