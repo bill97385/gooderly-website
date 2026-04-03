@@ -63,11 +63,7 @@
 		<p class="form-intro">歡迎來信洽詢，我們將盡速回覆。</p>
 		<div id="form-success" class="form-msg form-msg--success" style="display:none;">訊息已送出，我們將盡快回覆您！</div>
 		<div id="form-error" class="form-msg form-msg--error" style="display:none;">送出失敗，請直接來電 03-3656766 洽詢。</div>
-		<form action="https://formsubmit.co/a16389787@yahoo.com.tw" method="POST">
-			<input type="hidden" name="_subject" value="[好得力企業社] 網站詢問">
-			<input type="hidden" name="_next" value="https://www.xn--22qx2bp2fd1df8j.tw/contact.html?success=1">
-			<input type="hidden" name="_captcha" value="false">
-			<input type="text" name="_honey" style="display:none">
+		<form id="contact-form">
 			<label for="subject">主題</label>
 			<input id="subject" name="subject" type="text" required placeholder="請輸入主題">
 			<label for="name">姓名</label>
@@ -77,7 +73,7 @@
 			<label for="message">內容</label>
 			<textarea id="message" name="message" placeholder="請輸入訊息內容"></textarea>
 			<div class="cf-turnstile" data-sitekey="0x4AAAAAAC0DuKK1b_SrRsFv" data-theme="light"></div>
-			<button type="submit" class="btn btn-primary">送出訊息</button>
+			<button type="submit" class="btn btn-primary" id="submit-btn">送出訊息</button>
 		</form>
 	</div>
 	<div class="contact-info">
@@ -126,15 +122,38 @@
 </footer>
 
 <script>
-// Show form success/error message
-const params = new URLSearchParams(window.location.search);
-if (params.get('success') === '1') {
-	document.getElementById('form-success').style.display = 'block';
-}
-if (params.get('error') === '1') {
-	document.getElementById('form-error').style.display = 'block';
-}
+// Contact form submission
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+	e.preventDefault();
+	const btn = document.getElementById('submit-btn');
+	const successMsg = document.getElementById('form-success');
+	const errorMsg = document.getElementById('form-error');
+	successMsg.style.display = 'none';
+	errorMsg.style.display = 'none';
+	btn.textContent = '送出中...';
+	btn.disabled = true;
 
+	try {
+		const res = await fetch('https://gooderly-contact.bill97385.workers.dev', {
+			method: 'POST',
+			body: new FormData(this),
+		});
+		const data = await res.json();
+		if (data.success) {
+			successMsg.style.display = 'block';
+			this.reset();
+			turnstile.reset();
+		} else {
+			errorMsg.style.display = 'block';
+		}
+	} catch (err) {
+		errorMsg.style.display = 'block';
+	}
+	btn.textContent = '送出訊息';
+	btn.disabled = false;
+});
+
+// Mobile submenu toggle
 document.querySelectorAll('.nav-links > li').forEach(li => {
 	const sub = li.querySelector('ul');
 	if (sub) {
