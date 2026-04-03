@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>好得力企業社 - 植物生長箱</title>
+	<meta name="keywords" content="植物生長箱, 儀器, 植物, 台灣製造, 生長箱, 實驗">
+	<meta name="description" content="專業儀器製造，恆溫水槽精通，台灣製造並採用Danfoss壓縮機，好得力企業社，植物生長箱系列">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../styles.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KGYS77PR0M"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
@@ -8,14 +17,6 @@
 	gtag('js', new Date());
 	gtag('config', 'G-KGYS77PR0M');
 	</script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>好得力企業社 - 植物生長箱</title>
-	<meta name="keywords" content="植物生長箱, 儀器, 植物, 台灣製造, 生長箱, 實驗">
-	<meta name="description" content="專業儀器製造，恆溫水槽精通，台灣製造並採用Danfoss壓縮機，好得力企業社，植物生長箱系列">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
@@ -49,37 +50,37 @@
 
 <div class="category-grid">
 	<a href="plant-growth-chamber/gd-p270l.html" class="category-card">
-		<img src="../images/20-pdt.jpg" alt="植物生長箱">
+		<img loading="lazy" src="../images/20-pdt.jpg" alt="植物生長箱">
 		<p>LED植物生長箱</p>
 		<p>(270公升)</p>
 		<p>Model：GD-P270L</p>
 	</a>
 	<a href="plant-growth-chamber/gd-p500l.html" class="category-card">
-		<img src="../images/14-pdt.jpg" alt="植物生長箱">
+		<img loading="lazy" src="../images/14-pdt.jpg" alt="植物生長箱">
 		<p>LED植物生長箱</p>
 		<p>(540公升)</p>
 		<p>Model：GD-P500L</p>
 	</a>
 	<a href="plant-growth-chamber/gd-p960l.html" class="category-card">
-		<img src="../images/15-pdt.jpg" alt="植物生長箱">
+		<img loading="lazy" src="../images/15-pdt.jpg" alt="植物生長箱">
 		<p>LED植物生長箱</p>
 		<p>(960公升)</p>
 		<p>Model：GD-P960L</p>
 	</a>
 	<a href="plant-growth-chamber/gd-p270.html" class="category-card">
-		<img src="../images/20-pdt.jpg" alt="植物生長箱">
+		<img loading="lazy" src="../images/20-pdt.jpg" alt="植物生長箱">
 		<p>植物生長箱</p>
 		<p>(270公升)</p>
 		<p>Model：GD-P270</p>
 	</a>
 	<a href="plant-growth-chamber/gd-p500.html" class="category-card">
-		<img src="../images/14-pdt.jpg" alt="植物生長箱">
+		<img loading="lazy" src="../images/14-pdt.jpg" alt="植物生長箱">
 		<p>植物生長箱</p>
 		<p>(540公升)</p>
 		<p>Model：GD-P500</p>
 	</a>
 	<a href="plant-growth-chamber/gd-p960.html" class="category-card">
-		<img src="../images/15-pdt.jpg" alt="植物生長箱">
+		<img loading="lazy" src="../images/15-pdt.jpg" alt="植物生長箱">
 		<p>植物生長箱</p>
 		<p>(960公升)</p>
 		<p>Model：GD-P960</p>
@@ -102,10 +103,12 @@
 
 <script>
 document.querySelectorAll('.nav-links > li').forEach(li => {
-	if (li.querySelector('ul')) {
+	const sub = li.querySelector('ul');
+	if (sub) {
 		li.addEventListener('click', function(e) {
 			if (window.innerWidth <= 768) { this.classList.toggle('open'); }
 		});
+		sub.addEventListener('click', e => e.stopPropagation());
 	}
 });
 </script>

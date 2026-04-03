@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>好得力企業社 - 低溫藥品櫃 GD-1455</title>
+	<meta name="keywords" content="儀器, 藥品櫃, 台灣製造, 低溫藥品櫃, 實驗, GD-1455">
+	<meta name="description" content="專業儀器製造，恆溫水槽精通，台灣製造並採用Danfoss壓縮機，好得力企業社，低溫藥品櫃系列">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../styles.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KGYS77PR0M"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
@@ -8,14 +17,6 @@
 	gtag('js', new Date());
 	gtag('config', 'G-KGYS77PR0M');
 	</script>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>好得力企業社 - 低溫藥品櫃 GD-1455</title>
-	<meta name="keywords" content="儀器, 藥品櫃, 台灣製造, 低溫藥品櫃, 實驗, GD-1455">
-	<meta name="description" content="專業儀器製造，恆溫水槽精通，台灣製造並採用Danfoss壓縮機，好得力企業社，低溫藥品櫃系列">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
 
@@ -52,7 +53,7 @@
 		<h2>低溫藥品櫃</h2>
 		<p>Model：GD-1455</p>
 	</div>
-	<img src="../../images/10-pdt.jpg" alt="低溫藥品櫃" class="product-detail-img">
+	<img loading="lazy" src="../../images/10-pdt.jpg" alt="低溫藥品櫃" class="product-detail-img">
 
 	<div class="tabs">
 		<a class="selected">產品特性</a>
@@ -66,7 +67,7 @@
 		(b) 壓縮機散熱不良，自動停機及警報
 	</div>
 
-	<div style="margin-top:24px;">
+	<div class="spec-block">
 		<div class="tabs">
 			<a class="selected">規格表</a>
 		</div>
@@ -163,10 +164,12 @@
 
 <script>
 document.querySelectorAll('.nav-links > li').forEach(li => {
-	if (li.querySelector('ul')) {
+	const sub = li.querySelector('ul');
+	if (sub) {
 		li.addEventListener('click', function(e) {
 			if (window.innerWidth <= 768) { this.classList.toggle('open'); }
 		});
+		sub.addEventListener('click', e => e.stopPropagation());
 	}
 });
 </script>

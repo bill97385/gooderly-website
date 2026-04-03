@@ -75,10 +75,15 @@ ul{list-style:none;}
 
 /* --- Section Common --- */
 .section{padding:80px 24px;}
+.section--page-top{margin-top:70px;}
 .section-title{
   text-align:center;font-size:32px;font-weight:700;color:#0B1D51;
   margin-bottom:12px;
 }
+.section-title--left{text-align:left;margin-bottom:8px;}
+.form-intro{color:#666;margin-bottom:24px;}
+.btn+.btn{margin-left:12px;}
+.spec-block{margin-top:24px;}
 .section-subtitle{
   text-align:center;font-size:16px;color:#666;margin-bottom:48px;
 }
@@ -272,10 +277,4 @@ ul{list-style:none;}
   /* Section */
   .section{padding:48px 16px;}
   .section-title{font-size:24px;}
-}
-
-/* --- Submenu mobile toggle --- */
-@media screen and (max-width: 768px) {
-  .nav-links li>ul{display:none!important;}
-  .nav-links li.open>ul{display:block!important;}
 }
