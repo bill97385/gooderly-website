@@ -246,8 +246,10 @@ ul{list-style:none;}
     box-shadow:0 8px 24px rgba(0,0,0,.1);padding:12px 0;
   }
   .menu-toggle:checked ~ .nav-links{display:flex;}
-  .nav-links>li>a{padding:12px 24px;}
-  .nav-links li ul{position:static;box-shadow:none;padding-left:20px;}
+  .nav-links>li{width:100%;}
+  .nav-links>li>a{padding:14px 24px;text-align:left;font-size:16px;border-bottom:1px solid #f0f0f0;}
+  .nav-links li ul{position:static;box-shadow:none;padding-left:0;background:#f9fafb;}
+  .nav-links li ul a{padding:12px 24px 12px 40px;text-align:left;font-size:15px;border-bottom:1px solid #f0f0f0;}
   .nav-links li:hover>ul{display:none;}
   .nav-links li.open>ul{display:block;}
 
