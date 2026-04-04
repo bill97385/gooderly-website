@@ -61,8 +61,8 @@
 	<div class="contact-form">
 		<h2 class="section-title section-title--left">聯絡我們</h2>
 		<p class="form-intro">歡迎來信洽詢，我們將盡速回覆。</p>
-		<div id="form-success" class="form-msg form-msg--success" style="display:none;">訊息已送出，我們將盡快回覆您！</div>
-		<div id="form-error" class="form-msg form-msg--error" style="display:none;">送出失敗，請直接來電 03-3656766 洽詢。</div>
+		<div id="form-success" class="form-msg form-msg--success" hidden aria-live="polite">訊息已送出，我們將盡快回覆您！</div>
+		<div id="form-error" class="form-msg form-msg--error" hidden aria-live="polite">送出失敗，請直接來電 03-3656766 洽詢。</div>
 		<form id="contact-form">
 			<label for="subject">主題</label>
 			<input id="subject" name="subject" type="text" required placeholder="請輸入主題">
@@ -79,22 +79,22 @@
 	<div class="contact-info">
 		<h3>聯絡資訊</h3>
 		<div class="info-item">
-			<div class="icon">&#128205;</div>
+			<div class="icon" aria-hidden="true">&#128205;</div>
 			<div>
 				<p>公司地址</p>
 				<p>新北市鶯歌區德昌街57號</p>
 			</div>
 		</div>
 		<div class="info-item">
-			<div class="icon">&#128222;</div>
+			<div class="icon" aria-hidden="true">&#128222;</div>
 			<div>
 				<p>聯絡電話</p>
-				<p><a href="tel:0939433693" style="color:#2563EB;">0939-433693</a> 陸先生</p>
-				<p><a href="tel:0336567666" style="color:#2563EB;">03-3656766</a></p>
+				<p><a href="tel:0939433693" >0939-433693</a> 陸先生</p>
+				<p><a href="tel:0336567666" >03-3656766</a></p>
 			</div>
 		</div>
 		<div class="info-item">
-			<div class="icon">&#128224;</div>
+			<div class="icon" aria-hidden="true">&#128224;</div>
 			<div>
 				<p>傳真</p>
 				<p>03-3656049</p>
@@ -128,8 +128,8 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 	const btn = document.getElementById('submit-btn');
 	const successMsg = document.getElementById('form-success');
 	const errorMsg = document.getElementById('form-error');
-	successMsg.style.display = 'none';
-	errorMsg.style.display = 'none';
+	successMsg.hidden = true;
+	errorMsg.hidden = true;
 	btn.textContent = '送出中...';
 	btn.disabled = true;
 
@@ -140,16 +140,16 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 		});
 		const data = await res.json();
 		if (data.success) {
-			successMsg.style.display = 'block';
+			successMsg.hidden = false;
 			this.reset();
 			if (typeof turnstile !== 'undefined') turnstile.reset();
 		} else {
 			errorMsg.textContent = '送出失敗(' + (data.message || 'unknown') + ')，請直接來電 03-3656766 洽詢。';
-			errorMsg.style.display = 'block';
+			errorMsg.hidden = false;
 		}
 	} catch (err) {
 		errorMsg.textContent = '送出失敗(' + (err.message || 'network error') + ')，請直接來電 03-3656766 洽詢。';
-		errorMsg.style.display = 'block';
+		errorMsg.hidden = false;
 	}
 	btn.textContent = '送出訊息';
 	btn.disabled = false;

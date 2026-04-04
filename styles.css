@@ -210,6 +210,7 @@ ul{list-style:none;}
   font-size:18px;color:#2563EB;
 }
 .info-item div p{font-size:15px;color:#555;line-height:1.6;}
+.info-item a{color:#2563EB;}
 .info-item div p:first-child{font-weight:600;color:#333;}
 .contact-links{margin-top:32px;}
 .contact-links h4{font-size:16px;color:#0B1D51;margin-bottom:12px;}
@@ -247,11 +248,11 @@ ul{list-style:none;}
   }
   .menu-toggle:checked ~ .nav-links{display:flex;}
   .nav-links>li{width:100%;}
-  .nav-links>li>a{padding:16px 24px;text-align:left !important;font-size:16px;border-bottom:1px solid #eee;display:block;color:#333;}
+  .nav-links>li>a{padding:16px 24px;text-align:left;font-size:16px;border-bottom:1px solid #eee;display:block;color:#333;}
   .nav-links>li>a.active{color:#2563EB;background:#f0f5ff;}
   .nav-links li ul{position:static;box-shadow:none;padding-left:0;background:#f5f5f5;border-bottom:1px solid #eee;}
   .nav-links li ul li{width:100%;}
-  .nav-links li ul a{padding:14px 24px 14px 44px;text-align:left !important;font-size:15px;color:#555;display:block;border-bottom:1px solid #eee;}
+  .nav-links li ul a{padding:14px 24px 14px 44px;text-align:left;font-size:15px;color:#555;display:block;border-bottom:1px solid #eee;}
   .nav-links li:hover>ul{display:none;}
   .nav-links li.open>ul{display:block;}
 
