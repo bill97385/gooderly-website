@@ -92,11 +92,30 @@
 document.querySelectorAll('.nav-links > li').forEach(li => {
 	const sub = li.querySelector('ul');
 	if (sub) {
-		li.addEventListener('click', function(e) {
-			if (window.innerWidth <= 768) { this.classList.toggle('open'); }
+		const link = li.querySelector(':scope > a');
+		link.addEventListener('click', function(e) {
+			if (window.innerWidth <= 768) {
+				if (!li.classList.contains('open')) {
+					e.preventDefault();
+					document.querySelectorAll('.nav-links > li.open').forEach(l => l.classList.remove('open'));
+					li.classList.add('open');
+				}
+			}
 		});
 		sub.addEventListener('click', e => e.stopPropagation());
 	}
+});
+document.addEventListener('click', function(e) {
+	if (!e.target.closest('.nav-links')) {
+		document.querySelectorAll('.nav-links > li.open').forEach(l => l.classList.remove('open'));
+	}
+});
+document.querySelectorAll('.nav-links a').forEach(a => {
+	a.addEventListener('click', function() {
+		if (window.innerWidth <= 768 && !this.nextElementSibling) {
+			document.getElementById('menu-toggle').checked = false;
+		}
+	});
 });
 </script>
 </body>
