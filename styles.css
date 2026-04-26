@@ -195,6 +195,7 @@ ul{list-style:none;}
 }
 .contact-form label{display:block;font-size:14px;font-weight:600;color:#333;margin-bottom:6px;margin-top:16px;}
 .contact-form .required{color:#DC2626;margin-left:2px;}
+.contact-form .form-hint{font-size:13px;color:#6b7280;margin-top:20px;margin-bottom:0;}
 .contact-form input,.contact-form textarea{
   width:100%;padding:12px 16px;border:1px solid #d1d5db;border-radius:8px;
   font-size:15px;font-family:inherit;transition:border-color .2s;outline:none;
